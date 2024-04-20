@@ -8,14 +8,14 @@ assign min =
     // 如果a < b 对a继续判断 否则b判断
         (a < c ? 
     // 如果a < c 对a继续判断 否则c判断
-            (a < d ? a : d) :   // a < d -< a else d
-            (c < d ? c : d)     // c < d -< c else d
+            (a < d ? a : d) :   // a < d -> a else d
+            (c < d ? c : d)     // c < d -> c else d
         ) 
         :
     // 如果b < c 对b继续判断 否则c判断
         ( b < c ?
-            (b < d ? b : d) :       // b < d -< b else d
-            (c < d ? c : d)         // c < d -< c else d
+            (b < d ? b : d) :       // b < d -> b else d
+            (c < d ? c : d)         // c < d -> c else d
         ) 
     ;
 
