@@ -21,6 +21,7 @@ module updown_count(
         end
     end
 endmodule
+
 module top_module();
     reg clk = 0;
     reg clear;
